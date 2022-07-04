@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dependency/ Library/ API</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/983c1e16c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="dep-page">
+        <header>
+            <nav class="navi">
+                <label for="dependency" class="dependency">JavaScript Dependencies</label>
+
+                <input type="checkbox" id="check">
+
+                <label for="check" class="bars"><i class="fa-solid fa-bars"></i></label>
+
+                <ul>
+                    <li><a href="index.html" class="h-card"><i class="fas fa-home"></i> Homepage</a>
+                    <li><a class="h-card" href="profile.html"><i class="far fa-user"></i> Profile</a></li>
+                    <li><a class="h-card" href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article class="dep">
+                <p>
+                    To explain dependencies from my understanding I would say they are a specific code that developer use in their projects and the project
+                    will not run if the code is not there. We can get these codes as packages from other developers who shared their codes on coding platforms, for examaple,
+                    GitHub or NPM, downloading the zip file with JavaScript code and other files, and adding it to your project is what is called a dependency.
+                    According to Doglio, there are five different types of dependencies (2020). Web developers use these dependencies to help support their code 
+                    and not let it depend on the details of the actual dependencies they are using which might require them to change their code unnecessarily.
+                </p>
+                <p>
+                    These different types of dependencies are, runtime (normal) dependencies, peer dependencies, development (Dev) dependencies, bundled dependencies, 
+                    and optional dependencies (Doglio, 2020). I will briefly explain each dependency, before I jump into explaining the one, I used in my project and how it has strengthened
+                    the user experience and why I found it suitable for the web page I used it on.
+                </p>
+                <p>
+                    Runtime dependencies are used to specify names for keys and values, then enable the package manager they use to take care of grabbing the values 
+                    and names from the global registry known as npmjs.org (Doglio, 2020). This dependency is considered one of the easiest because they use values (version) 
+                    and file name for file transfers and storages to keep the project functioning. The developer can use URLs to download versions that they see suitable for 
+                    their projects as well as local files whereby they will be able to connect directly to their files to test and run their codes. These normal dependencies do
+                    not require the developer to rely on other libraries or APIs for their projects to work since they have everything the project needs to function (Doglio, 2020). 
+                </p>
+                <p>
+                    Peer dependencies on the other hand, are responsible for determining the packages a developer’s project is cooperative with. These are specifically used to 
+                    specify a delicate relationship with another project, a developer can feel like their projects need a certain dependency but not precisely use it or the dependency
+                    is already installed by some other project, this then can be seen as a peer dependency. Doglio uses a couple of examples for when the developers can use this dependency, 
+                    such as when you are establishing a Micro Frontend, and trying to figure out which dependencies are external, and which are internal (2020). 
+                </p>
+                <p>
+                    Dev dependencies store modules the developer uses only during the development stage of their project. It is basically seen when the developer can deploy to production 
+                    without the use of a package, they work only if one installs them through npm link or install from the root folder of their project (Doglio, 2020). Developers should then
+                    give thought to using these dependencies only if the modules and packages are going to be used by additional projects.
+                </p>
+                <p>
+                    Furthermore, we have bundled dependencies, which are used when packing a project into a unique file. The process is done through npm pack order that develops the folder into
+                    a zip file. Lastly, optional dependencies are more similar to normal dependencies, but they are different in a way that NPM will not be pulling out with an error if it cannot
+                    install the packages (Doglio, 2020). Instead of running an error when a certain link or version is not found, the NPM allows the project to keep running, and all this can be implemented through code.
+                    This dependency can be used when a developer depends on an unreliable source in their projects. This topic was really interesting and eye-opening because I had no idea I had so many options and dependencies 
+                    to use in my projects, the only one I knew a bit about was the dev dependency. Dependency is simply the process of installing packages or copy and pasting other people’s codes from GitHub for example to make 
+                    your project depend on it, which means the project will not function without the code. 
+                </p>
+                <p>
+                    For my project I used the normal dependencies and went to GitHub to download local files that a developer called davidfig cared to share on the 15th of August 2020, for the click events in JavaScript into my project
+                    to help ease the flow and responsiveness in my portfolio page. I chose this local file because I believe it is suitable for the type of structure and user experience I was aiming for, which is enabling the user to 
+                    navigate through the images in my portfolio page effortlessly and get an effective response when they click on buttons to view the different images they would like to look at as well as the links available on the webpage.
+                </p>
+            </article>
+        </main>
+    </section>
+    <h1 class="keys"></h1>
+
+    <script src="index.js"></script>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section reference">
+            <header><h1 class="ref">References:</h1> </header>
+            <ul>
+                <li><p>DOGLIO, F. 2021. JavaScript Dependencies: Everything You Ever Wanted to Know But Where Afraid to Ask. 
+                    Bits and Pieces. Online. URL: https://blog.bitsrc.io/everything-you-ever-wanted-to-know-but-were-afraid-to-
+                    ask-about-javascript-dependencies-175220f0dcfb. (Accessed 03 June 2022).
+                    <a class="url-ref" href="https://blog.bitsrc.io/everything-you-ever-wanted-to-know-but-were-afraid-to-
+                    ask-about-javascript-dependencies-175220f0dcfb" class="u-url">bitsandpieces</a></p>
+            </ul>
+          <div class="contact">
+              <span><i class="fas fa-phone"></i> &nbsp; 073 136 6742</span>
+          </div>
+          <div class="socials">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    
+        <div class="footer-section blogs">
+            <header><h2 class="foot">Blogs</h2></header>
+            <ul>
+                <li><a class="h-card" href="week2.html">Week2</a></li>
+                <li><a class="h-card" href="week4.html">Week4</a></li>
+                <li><a class="h-card" href="week6.html">Week6</a></li>
+                <li><a class="h-card" href="week9.html">Week9</a></li>
+                <li><a class="h-card" href="week12.html">Week12</a></li>
+                <li><a class="h-card" href="week14.html">Week14</a></li>
+            </ul>  
+        </div>
+        <div class="footer-section guides">
+            <header><h2 class="foot">Guides</h2></header>
+            <ul>
+                <li><a class="h-card" href="wireframes.html">Wireframes</a>
+                <li><a class="h-card" href="styleguide.html">Styleguides</a></li> 
+                <li><a class="h-card" href="reflection.html">Reflections</a></li>
+                <li><a class="h-card" href="critical.html">Critical Reflection</a></li>
+            </ul> 
+        </div>
+    
+        <div class="footer-section contact-us">
+            <h2 class="foot">Contact Us</h2>
+            <br>
+            <form action="index.html" method="post">
+              <input type="name" name="name" class="text-input contact-input" placeholder="Your name and surname...">
+              <textarea name="messge" class="text-input contact-input" placeholder="Your feedback..."></textarea>
+              <button onclick="addComment()" type="submit" class="btn">
+                <i class="fas fa-comment-dots"></i> <a href="index.html"> Send</a>
+              </button>
+            </form>
+          </div>
+       </div>
+    
+        <div class="footer-bottom">
+           &copy; interactivemedia.com | Designed by Lerato Mohapi
+        </div>
+    </div>
+</footer>
+</html>
